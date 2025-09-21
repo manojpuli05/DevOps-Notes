@@ -1,0 +1,54 @@
+* DevOps Project Architecture: It shows how code moves from development to production using automation, CI/CD, monitoring, and Infrastructure Management.
+
+*DevOps Project Flow (Step-by-Step)
+1. Code Development (Developer Stage)
+-> Developer writes code using an IDE (VS Code, IntelliJ, Eclipse, etc.).
+-> Code is pushed to Git (GitHub, GitLab, Bitbucket).
+Command: Developer → GitHub/GitLab
+
+2. Continuous Integration (CI Stage)
+-> CI Tool (Jenkins/GitHub Actions/GitLab CI) detects code changes.
+   Steps performed: 
+   *Code checkout
+   *Build (Maven/Gradle/npm)
+   *Unit Tests (JUnit, Mocha, Jest)
+   *Static Code Analysis (SonarQube)
+   *Security Scan (Snyk, Trivy)
+Command: GitHub → Jenkins → Build + Test + SonarQube
+
+3. Artifact Management
+-> Build output (JAR, WAR, Docker Image, npm package) is stored in an Artifact Repository.
+   Example: Nexus, Artifactory, AWS S3, DockerHub
+Command: Jenkins → Nexus / Artifactory / DockerHub
+
+4. Infrastructure as Code (IaC)
+-> Terraform / Ansible provisions servers, databases, and load balancers on AWS, Azure, or GCP.
+-> Ensures reproducible environments (Dev → QA → Prod).
+Command: Terraform → AWS Cloud (EC2, S3, RDS, EKS)
+
+5. Continuous Deployment (CD Stage)
+-> Jenkins (or ArgoCD, Spinnaker) deploys artifacts to servers or Kubernetes clusters.
+->Deployment strategies:
+  Rolling Update
+  Blue-Green Deployment
+  Canary Release
+Commands: Jenkins → Docker → Kubernetes (EKS, AKS, GKE)
+
+6. Containerization & Orchestration
+-> Docker packages the app with dependencies.
+-> Kubernetes manages scaling, load balancing, and auto-healing.
+Commands: App → Docker Container → Kubernetes Pods
+
+7. Monitoring & Logging
+-> Prometheus + Grafana → Metrics (CPU, Memory, Response Time).
+->ELK Stack (Elasticsearch, Logstash, Kibana) → Logs.
+->Alerting → Slack, Email, PagerDuty.
+Command: App → Logs & Metrics → Grafana / ELK
+
+8. Feedback Loop
+-> Monitoring alerts developers about issues.
+-> Developers fix bugs, push changes → Cycle repeats.
+Command: Grafana/ELK → Developers → GitHub → Jenkins
+
+Full DevOps Flow:
+Developer → GitHub → Jenkins (CI/CD) → SonarQube → Nexus/DockerHub → Terraform/Ansible → Docker → Kubernetes → Prometheus/Grafana → Feedback → Developer
