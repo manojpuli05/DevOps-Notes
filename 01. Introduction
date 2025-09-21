@@ -1,0 +1,20 @@
+1. What is DevOps?
+->It is a set of practices and tools that automate and integrate the process between Software Development (Dev) and IT operations (Ops) teams to deliver applications and services faster and more reliably.
+
+2. Why does DevOps need?
+-> It is needed to enable faster, reliable, and continuous delivery of high-quality software through collaboration, automation, and monitoring.
+
+3. How We Work with DevOps in Real-Time?
+-> It works by automating the entire software lifecycle — from coding, building, testing, and deploying to monitoring — using CI/CD pipelines, IaC, and collaboration tools to deliver reliable applications faster.
+
+* Key Features of DevOps:
+i.Collaboration – Dev + Ops teams work together.
+ii. Automation – Automates builds, tests, deployments, and monitoring.
+iii. Continuous Integration (CI) – Frequent code integration & testing.
+iv. Continuous Delivery/Deployment (CD) – Fast, reliable releases.
+v. Scalability – Works with containers, microservices, cloud infra.
+vi. Monitoring & Logging – Continuous visibility into app performance.
+vii. Security (DevSecOps) – Security integrated at every stage.
+viii. Agility – Quick responses to market and customer needs.
+ix. Reduced Failures – Automated pipelines reduce human errors.
+x. Faster Time to Market – Quicker release cycles with confidence.
