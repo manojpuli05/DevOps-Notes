@@ -1,0 +1,50 @@
+* SonarQube: It is a code quality and security analysis tool that helps developers write clean, maintainable, and bug-free code.
+* Functioning: In software testing, functioning refers to checking whether the functions (features/operations) of an application work as expected according to the requirements.
+  Types of Functioning
+  1. Functioning
+  2. Non-Functioning
+
+* Functioning- It is a type of software testing that validates whether the software functions work as expected according to the requirements.
+Example- Checking if login works with valid credentials.
+         Checking if clicking "Add to Cart" adds an item in an e-commerce app.
+
+* Non-Functioning- It checks the performance, usability, reliability, and scalability of the software. It focuses on how well the system performs rather than what it does.
+Example- Checking how fast the login page loads with 1000 users (performance).
+         Checking how secure the login system is against hacking (security).
+         Checking if the app works across different browsers (compatibility).
+
+* What SonarQube Can Do?
+-> SonarQube is mainly used for code quality, security, and maintainability in DevOps pipelines. Here’s what it can do
+1. Code Quality Analysis
+->Detects bugs, code smells, and anti-patterns.
+->Identifies duplicate code that increases maintenance cost.
+->Enforces coding standards (like Java coding rules, ESLint for JS, etc.).
+
+2. Security Checking (DevSecOps)
+->Finds vulnerabilities (e.g., SQL Injection, XSS).
+->Detects security hotspots (code that may become risky in the future).
+->Follows standards like OWASP Top 10 and SANS Top 25.
+
+3. Maintainability & Reliability
+->Measures code complexity (cyclomatic complexity).
+->Tracks technical debt (how much effort is needed to fix issues).
+->Ensures code is readable, modular, and easy to maintain.
+
+4. Test Coverage & Code Review
+->Integrates with testing frameworks to measure unit test coverage.
+->Ensures new code is covered by tests before merging.
+->Provides dashboards & reports for developers and managers.
+
+5. Quality Gates (Automation in DevOps)
+->Acts as a checkpoint in CI/CD pipelines.
+->If the code doesn’t meet quality standards, SonarQube can block the build/deployment.
+
+6. Multi-Language Support
+->Supports 25+ programming languages (Java, JavaScript, Python, C#, C++, Go, PHP, etc.).
+
+7. Integration with DevOps Tools
+->Works with Jenkins, GitLab CI, GitHub Actions, Azure DevOps, Bitbucket Pipelines.
+->Ensures code is scanned automatically on every commit/pull request.
+
+* Why does SonarQube not scan images?
+-> SonarQube is a static code analysis tool → it is designed to analyze source code and configuration files, not binary or media files.
